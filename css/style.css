@@ -1,11 +1,9 @@
 html,body
 {
-    width: 100%;
-    height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .caption h1{
@@ -17,22 +15,12 @@ html,body
 }
 .sec1{
     background-image: url(../images/intro-bg.jpg);
+    background-position: center center;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
     height: 100vh;
 }
-.black-overlay{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-/* .navbar-toggler-icon{
-    border-color: white;
-} */
 .navbar-brand{
     color: white;
 }
@@ -51,6 +39,9 @@ nav{
 ul li a{
     color: white;
     text-decoration: none;
+}
+.sec1 ul li a{
+    border-bottom: 2px solid transparent;
 }
 .sec1 a:hover{
     color: white;
@@ -275,16 +266,6 @@ ul li a{
     font-size: 20px;
     color: #4e4e4e;
 }
-/* .link-border{
-    padding: 2 5;
-    border: 2px #0078ff solid;
-    border-radius: 50%;
-}
-.link-border:hover{
-    color: white;
-    background-color: #0078ff;
-    border-color: #d0e6ff
-} */
 .sec5 #social-media i{
     font-size: 16px;
     padding: 10;
@@ -318,16 +299,9 @@ ul li a{
     top: 130%;
     left: 0%;
 }
-/* .translating{
-    border: 2px solid white;
-    position: absolute;
-    top: 100%;
-    right: 200%;
-    
-} */
 .back-top-up{
     bottom: 2%;
-    right: 1%;
+    right: 2%;
     font-size: 38px;
     z-index: 88;
 }
