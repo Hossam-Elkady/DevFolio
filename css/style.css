@@ -1,9 +1,12 @@
-html,body
+body
 {
     margin: 0px;
     padding: 0px;
-    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .caption h1{
@@ -25,7 +28,8 @@ html,body
     color: white;
 }
 nav{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: black;
+    /* background-color: rgba(0, 0, 0, 0.7); */
 }
 .sec1{
     color: white;
@@ -168,12 +172,7 @@ ul li a{
     font-weight: 300;
     line-height: 30px;
 }
-/* .services-brdr{
-    border-bottom: solid 6px #0078ff;
-    width: 2rem;
-    text-align: center;
-    margin: auto;
-} */
+
 .sec2 i{
     color: ;
     font-size: 50px;
@@ -225,12 +224,18 @@ ul li a{
 .sec3 .rounded-circle{
     border: 2px #0078ff solid !important;
 }
-#carouselExampleIndicators ,.sec5{
+#carouselExampleIndicators {
     height: 60vh;
-    background-image: url(../images/overlay-bg.jpg);
-    background-attachment: fixed;
+    
     border: none;
 }
+.sec5{
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+}
+/* .sec5 .row{
+    z-index: 10;
+} */
 #carouselExampleIndicators button{
     border: hidden;
 }
@@ -313,22 +318,26 @@ ul li a{
     color: white;
     content: "TRAVEL";
     position: absolute;
-    top: 47%;
-    left: 42%;
+    top: 50%;
+    left: 50%;
     background-color: #0078ff;
     padding: 5 15px;
     border-radius: 5px;
+    transform: translate(-50%,-50%);
 }
+
 .web-design::after{
     font-size: 11px;
     color: white;
     content: "WEB DESIGN";
     position: absolute;
-    top: 47%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
     background-color: #0078ff;
     padding: 5 15px;
     border-radius: 5px;
+    transform: translate(-50%,-50%);
+
 }
 .card span{
     font-size: 13px;
@@ -338,4 +347,43 @@ ul li a{
 }
 footer{
     background-color: #0062D3;
+}
+@media screen and (max-width: 980) {
+    .sec1 ul li a:hover{
+        border-bottom: 2px solid white;
+        width: 10%;
+    }
+    .nav-link{
+        margin: 50 0;
+        width: auto;
+        text-align: center;
+    }
+}
+@media screen and (min-width:975) and (max-width :1187) {
+    .travel::after {
+        font-size: 11px;
+        color: white;
+        content: "TRAVEL";
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        background-color: #0078ff;
+        padding: 5 15px;
+        border-radius: 5px;
+        transform: translate(-50%,-50%);
+    }
+}
+@media screen and (max-width : 975) {
+    .travel::after {
+    font-size: 11px;
+    color: white;
+    content: "TRAVEL";
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    background-color: #0078ff;
+    padding: 5 15px;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+}
 }
